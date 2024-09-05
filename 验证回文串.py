@@ -8,28 +8,41 @@
 
 
 """
-def get(s,n):
+
+
+def get( s, n):
     while True:
-        if not ((ord(s[n])>=97 and ord(s[n])<=122) or (ord(s[n])>=48 and ord(s[n])<=57)):
-            n-=1
+        if not ((ord(s[n]) >= 97 and ord(s[n]) <= 122) or (ord(s[n]) >= 48 and ord(s[n]) <= 57)):
+            n -= 1
         else:
             return n
 
-def isPalindrome(s):
-    s=s.lower()
-    s=list(s)
-    n=len(s)-1
+
+def isPalindrome( s):
+    """
+    :type s: str
+    :rtype: bool
+    """
+    s = s.lower()
+    s = list(s)
+    n = len(s) - 1
     for i in range(len(s)):
         # if s[i] (ord(a)>=97 and ord(a)<=122) or (ord(a)>=48 and ord(a)<=57)
-        if i==n:
+        if i == n:
             return True
-        if not ((ord(s[i])>=97 and ord(s[i])<=122) or (ord(s[i])>=48 and ord(s[i])<=57)):
-            continue
-        n=get(s,n)
-        if s[i]==s[n]:
-            n-=1
         else:
-            return False
+            if not ((ord(s[i]) >= 97 and ord(s[i]) <= 122) or (ord(s[i]) >= 48 and ord(s[i]) <= 57)):
+                continue
+            n = get(s, n)
+            if i == n:
+                return True
+            else:
+                if s[i] == s[n] and i + 1 == n:
+                    return True
+                elif s[i] == s[n]:
+                    n -= 1
+                else:
+                    return False
 s = "A man, a plan, a canal: Panama"
 print(isPalindrome(s))
 
