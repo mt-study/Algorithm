@@ -2,7 +2,8 @@
 
 题目:https://leetcode.cn/problems/minimum-size-subarray-sum/?envType=study-plan-v2&envId=top-interview-150
 解题思路：
-心得：
+完成时间：24.9.4
+心得：滑动窗口的知识学习
 
 """
 
