@@ -19,3 +19,7 @@
 `
 [[[] for _ in range(3)] for _ in range(3)]
 `
+### 3. 数组删除指定元素
+`list.remove('a')`
+### 4. 统计列表中元素以及频率
+`collections.Counter(list)`
