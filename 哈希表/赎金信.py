@@ -7,23 +7,25 @@
 """
 import collections
 
-
 def canConstruct( ransomNote, magazine):
     """
     :type ransomNote: str
     :type magazine: str
     :rtype: bool
     """
-    # magazine =list(magazine)
-    #
-    # for s in ransomNote:
-    #     if s not in magazine:
-    #         return False
-    #     magazine.remove(s)
-    # return True
-    if len(ransomNote) > len(magazine):
-        return False
-    return not collections.Counter(ransomNote) - collections.Counter(magazine)
+    # 我的算法
+
+    magazine =list(magazine)
+
+    for s in ransomNote:
+        if s not in magazine:
+            return False
+        magazine.remove(s)
+    return True
+# 官方算法
+    # if len(ransomNote) > len(magazine):
+    #     return False
+    # return not collections.Counter(ransomNote) - collections.Counter(magazine)
 
 ransomNote = "aa"
 magazine = "ab"
