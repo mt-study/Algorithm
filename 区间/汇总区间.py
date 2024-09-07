@@ -2,7 +2,7 @@
 题目:https://leetcode.cn/problems/summary-ranges/description/?envType=study-plan-v2&envId=top-interview-150
 解题思路：暴力破解
 完成时间：24.9.7
-心得：暴力破解法，用到双指针来移动指针
+心得：利用双指针，一个保存开始，一个保存结束，如果和后面的数值不连续，那么将会以下一个作为开始充值m 和 n的值
 
 """
 
