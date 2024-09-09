@@ -23,3 +23,9 @@
 `list.remove('a')`
 ### 4. 统计列表中元素以及频率
 `collections.Counter(list)`
+### 5. 列表入栈和出栈
+`list.append()`
+`list.pop()`
+### 6. 列表中间隔选取
+`list[x::y]`
+x为开始的地址，y是间隔数
