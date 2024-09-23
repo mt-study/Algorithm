@@ -1,6 +1,6 @@
 """
 题目:https://leetcode.cn/problems/linked-list-cycle/?envType=study-plan-v2&envId=top-interview-150
-完成时间：2024.9.12
+完成时间：2024.9.23
 解题思路：建立一个列表来存储已经访问过的指针，如果访问时，已经存在，则有环
 心得：
 """
