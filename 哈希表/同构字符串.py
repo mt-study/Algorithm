@@ -1,6 +1,6 @@
 """
 题目:https://leetcode.cn/problems/isomorphic-strings/description/?envType=study-plan-v2&envId=top-interview-150
-完成时间：2024.10.10
+完成时间：2024.10.11
 解题思路：定义一个字典，用来存储对应关系，如果遇到没有存储的键，用来判断值是不是已经和其他键进行了匹配，如果匹配就直接返回错误
 心得：
 
