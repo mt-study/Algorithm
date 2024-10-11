@@ -41,3 +41,8 @@ x为开始的地址，y是间隔数
 去重
 
 例如 "egg" 变 ['e','g'']
+
+### 10.二维数组的排序
+按照第一个排序`sorted(intervals)`
+
+按照第二个排序`sorted(array, key=lambda x: x[1])`
